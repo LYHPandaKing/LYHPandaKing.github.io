@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello Panda</title>
+</head>
+<body>
+<h1 id="h1">Hello Panda</h1>
+<h2 id="h2">Hello Panda</h2>
+<h3 id="h3">Hello Panda</h3>
+<h4 id="h4">Hello Panda</h4>
+<h5 id="h5">Hello Panda</h5>
+<input id="value" type="text">
+<button onclick="changeValue()">
+    Change Value
+</button>
+<select name="" id="select">
+    <option value="h1">H1</option>
+    <option value="h2">H2</option>
+    <option value="h3">H3</option>
+    <option value="h4">H4</option>
+    <option value="h5">H5</option>
+</select>
+<br>
+<a href="https://google.com" target="_blank">
+    <button>Go To Google</button>
+</a>
+<br>
+<img src="https://placeimg.com/800/600/any" alt="Photo Not Found"/>
+</body>
+<script>
+    function changeValue(){
+        let select = document.getElementById('select').value;
+        document.getElementById(select).innerHTML = document.getElementById('value').value;
+    }
+</script>
+</html>
